@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.tinnova&apos; to &apos;com.tinnova.cadastroveiculos&apos;&#x0D;&#x0A;- Original project: &apos;CadastroVeiculos&apos;&#x0D;&#x0A;- Original element: &apos;CadastroVeiculos/src/main/java/com.tinnova&apos;&#x0D;&#x0A;- Renamed element: &apos;CadastroVeiculos/src/main/java/com.tinnova.cadastroveiculos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.tinnova&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.tinnova" name="com.tinnova.cadastroveiculos" qualified="false" references="true" stamp="1662142795831" textual="false" version="1.0"/>
+</session>
