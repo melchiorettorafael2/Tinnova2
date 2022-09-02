@@ -1,0 +1,12 @@
+package com.tinnova.cadastro_veiculos.entities;
+
+public class Veiculos {
+	private long id;
+	private String modelo;
+	private String marca;
+	private Integer ano;
+	private String descricao;
+	private boolean vendido;
+
+
+}

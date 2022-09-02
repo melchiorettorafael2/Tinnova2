@@ -1,0 +1,5 @@
+package com.tinnova.cadastro_veiculos.entities;
+
+public class Veiculos {
+
+}

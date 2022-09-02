@@ -1,0 +1,17 @@
+package com.tinnova.cadastro_veiculos.resources;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+
+@RestController
+@RequestMapping(value = "/veiculos")
+public class VeiculosResource {
+	
+	public ResponseEntity<Veiculos> findAll(){
+		Veiculos v = new Veiculos(1, "Ka", "Ford", 2020, "usado, hatch, 1.0, flex", false);
+		return ResponseEntity.ok().body(v);
+	}
+}
