@@ -1,0 +1,5 @@
+package com.tinnova.cadastro_veiculos.repositories;
+
+public class VeiculosRepository {
+
+}

@@ -1,0 +1,44 @@
+package com.tinnova.cadastro_veiculos.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tinnova.cadastro_veiculos.dto.VeiculosDTO;
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+import com.tinnova.cadastro_veiculos.repositories.VeiculosRepository;
+import com.tinnova.cadastro_veiculos.services.exception.ObjectNotFoundException;
+
+
+@Service
+public class VeiculosService {
+	
+	@Autowired
+	private VeiculosRepository repo;
+	
+	public List<Veiculos> findAll(){
+		return repo.findAll();
+	}
+	
+	public Veiculos findById(String id) {
+		Optional<Veiculos> obj = repo.findById(id);
+		return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
+		}
+	
+	public Veiculos insert(Veiculos obj) {
+		return repo.insert(obj);
+	}
+	
+	public void delete(String id) {
+		findById(id);
+		repo.deleteById(id);
+	}
+	
+	
+	
+	public Veiculos fromDTO(VeiculosDTO objDto) {
+		return new Veiculos(objDto.getId(), objDto.getModelo(), objDto.getMarca(), objDto.getAno(), objDto.getDescricao(), objDto.isVendido());
+	}
+}

@@ -1,0 +1,5 @@
+package com.tinnova.cadastro_veiculos.resources.exception;
+
+public class StandardError {
+
+}

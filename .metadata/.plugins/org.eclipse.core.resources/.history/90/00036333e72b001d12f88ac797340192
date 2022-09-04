@@ -1,0 +1,15 @@
+package com.tinnova.cadastro_veiculos.resources.exception;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+
+import com.tinnova.cadastro_veiculos.services.exception.ObjectNotFoundException;
+
+@ControllerAdvice
+public class ResourceExceptionHandler {
+	public ResponseEntity<StandardError> objectNotFound(ObjectNotFoundException e, HttpServletRequest request){
+		
+	}
+}

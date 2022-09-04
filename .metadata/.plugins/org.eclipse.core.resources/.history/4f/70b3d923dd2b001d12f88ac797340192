@@ -1,0 +1,25 @@
+package com.tinnova.cadastro_veiculos.config;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+import com.tinnova.cadastro_veiculos.repositories.VeiculosRepository;
+
+public class Instantiation implements CommandLineRunner {
+	
+	@Autowired
+	private VeiculosRepository veiculosRepository;
+	@Override
+	public void run(String... args) throws Exception {
+		veiculosRepository.deleteAll();
+		Veiculos hb20 = new Veiculos(null, "HB20","Hyundai",2020,"Hyundai HB20 2020, usado, branco, flex", false);
+		Veiculos uno = new Veiculos(null, "Uno","Fiat",1995,"Fiat Uno 1995, usado, azul, gasolina", false);
+		Veiculos celta = new Veiculos(null, "Celta","GM",2008,"GM Celta 2008, usado, prata, gasolita", false);
+		
+		veiculosRepository.saveAll(Arrays.asList(hb20,uno,celta));
+	}
+
+}

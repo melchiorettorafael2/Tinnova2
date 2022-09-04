@@ -1,0 +1,27 @@
+package com.tinnova.cadastro_veiculos.dto;
+
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+
+public class VeiculosDTO {
+	
+	private String id;
+	private String modelo;
+	private String marca;
+	private Integer ano;
+	private String descricao;
+	private boolean vendido;
+	
+	public VeiculosDTO() {
+		
+	}
+	
+	public VeiculosDTO(Veiculos obj) {
+		id = obj.getId();
+		modelo=obj.getModelo();
+		marca=obj.getMarca();
+		ano=obj.getAno();
+		descricao=obj.getDescricao();
+		vendido=obj.isVendido();
+	}
+
+}

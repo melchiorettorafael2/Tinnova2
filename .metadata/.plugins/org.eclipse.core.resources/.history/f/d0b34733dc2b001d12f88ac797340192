@@ -1,0 +1,15 @@
+package com.tinnova.cadastro_veiculos.config;
+
+import org.springframework.boot.CommandLineRunner;
+
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+
+public class Instantiation implements CommandLineRunner {
+
+	@Override
+	public void run(String... args) throws Exception {
+		Veiculos hb20 = new Veiculos(null, "HB20","Hyundai",2020,"Hyundai HB20 2020, usado, branco, flex", false);
+		Veiculos uno = new Veiculos(null, "Uno","Fiat",1995,"Fiat Uno 1995, usado, azul, gasolina", false);
+	}
+
+}

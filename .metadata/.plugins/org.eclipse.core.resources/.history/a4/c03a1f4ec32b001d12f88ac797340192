@@ -1,0 +1,23 @@
+package com.tinnova.cadastro_veiculos.resources;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+
+@RestController
+@RequestMapping(value = "/veiculos")
+public class VeiculosResource {
+	
+	@RequestMapping(method=)
+	public List<Veiculos> findAll(){
+		Veiculos v = new Veiculos(1, "Ka", "Ford", 2020, "Modelo: Ford Ka 2020, Categoria: Usado, Versão: Hatch, Motor: 1.0, Cor: Preto ", false);
+		List<Veiculos> list = new ArrayList<>();
+		return list;
+		
+	}
+}

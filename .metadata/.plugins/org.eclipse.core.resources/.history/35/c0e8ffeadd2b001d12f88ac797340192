@@ -1,0 +1,5 @@
+package com.tinnova.cadastro_veiculos.dto;
+
+public class VeiculosDTO {
+
+}

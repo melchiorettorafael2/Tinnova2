@@ -1,0 +1,20 @@
+package com.tinnova.cadastro_veiculos.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tinnova.cadastro_veiculos.entities.Veiculos;
+import com.tinnova.cadastro_veiculos.repositories.VeiculosRepository;
+
+@Service
+public class VeiculosService {
+	
+	@Autowired
+	private VeiculosRepository repo;
+	
+	public List<Veiculos> findAll(){
+		return repo.findAll();
+	}
+}
