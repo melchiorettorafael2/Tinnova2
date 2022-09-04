@@ -1611,3 +1611,5 @@ java.net.URISyntaxException: Illegal character in path at index 16: file:/C:/Pro
 2022-09-03 22:13:42,474 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2022-09-03 22:13:42,486 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-09-03 22:13:42,487 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-03 22:13:42,487 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-03 22:13:42,487 [Worker-98: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\tinnova5\cadastro_veiculos\src\test\resources
